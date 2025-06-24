@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samrat Shukla | Full Stack .NET Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #1e293b;
+      --accent: #2563eb;
+      --bg: #f8fafc;
+      --text: #111827;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      color: #cbd5e1;
+    }
+
+    nav {
+      background-color: #e2e8f0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px 0;
+      font-weight: 600;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      max-width: 960px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 5px solid var(--primary);
+      padding-left: 10px;
+      color: var(--primary);
+    }
+
+    .section-content {
+      font-size: 1.1rem;
+      color: #374151;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .project-card {
+      background-color: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-left: 5px solid var(--primary);
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .project-card h3 {
+      color: var(--secondary);
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #4b5563;
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    footer {
+      background-color: var(--secondary);
+      color: #cbd5e1;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Samrat Shukla</h1>
+    <p>Full Stack .NET Developer | Focused on scalable, real-world systems</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-content">With 3+ years in the industry, I specialize in backend logic and database-driven systems using ASP.NET, SQL Server, and SignalR. I build applications that are easy to maintain, scalable, and performance-oriented. I'm passionate about writing meaningful, reusable code that serves users and teams effectively.</p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills & Tools</h2>
+    <div class="section-content">
+      <p><strong>Languages:</strong> C#, JavaScript, SQL</p>
+      <p><strong>Frameworks:</strong> ASP.NET MVC, Web API, SignalR</p>
+      <p><strong>Tools:</strong> GitHub, Visual Studio, SSMS, Postman, jQuery</p>
+      <p><strong>Specialties:</strong> Backend logic, Live data sync, Performance tuning</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h3>Race Time Split Generator</h3>
+        <p>Tracks athlete timing with custom checkpoint logic. Designed in C# with SQL optimization and reader-round configuration support.</p>
+        <a href="https://github.com/samratshukla/race-timing" target="_blank">GitHub Repo</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Live Stock Tracker</h3>
+        <p>Built for warehouses to manage SKU stock in real time. Combines SQL Server and SignalR for live in/out scan updates.</p>
+        <a href="https://github.com/samratshukla/live-stock-tracker" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Real-time Chat App</h3>
+        <p>Team communication platform using SignalR. Features private rooms, user auth, and real-time data binding.</p>
+        <a href="https://github.com/samratshukla/realtime-chat" target="_blank">Check Code</a>
+      </div>
+
+      <div class="project-card">
+        <h3>POS Inventory Sync</h3>
+        <p>Helps manage inventory allocation across POs. Dynamic logic filters assigned items and ensures accurate batch syncs.</p>
+        <a href="#">(Private Codebase)</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-content">
+      Email: <a href="mailto:samrat@example.com">samrat@example.com</a><br>
+      GitHub: <a href="https://github.com/samratshukla" target="_blank">github.com/samratshukla</a><br>
+      LinkedIn: <a href="#">(Your LinkedIn URL)</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Samrat Shukla — Built with clean code and attention to detail
+  </footer>
+</body>
+
+</html>
